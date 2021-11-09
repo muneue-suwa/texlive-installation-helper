@@ -1,5 +1,11 @@
 # TeX Live Installation Helper
 
+## 環境
+
+Windows 10日本語版で確認した．他の言語の場合はエラーが出るかもしれないが，そのときは`run_tl_installer.ps1`のencodingをUTF-8に変更すればエラーを回避できるかもしれない．
+
+## 使い方
+
 1. `C:\temp_for_texlive`が存在する場合は削除する．
 2. `run.bat`をダブルクリックする．
 3. TeX Liveの`install-tl-windows.bat`を選択する．
