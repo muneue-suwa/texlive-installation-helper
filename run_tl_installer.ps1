@@ -1,4 +1,3 @@
-
 #[void][Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 $Env:TEMP = "C:\temp_for_texlive"
 New-Item $Env:TEMP -ItemType Directory
@@ -6,7 +5,6 @@ if ($? -eq $false) {
     Write-Host "Error: You should remove" $Env:TEMP
     exit
 }
-$Env:TMP = $Env:TEMP
 
 Add-Type -AssemblyName System.Windows.Forms
 $FileBrowser = New-Object System.Windows.Forms.OpenFileDialog -Property @{
